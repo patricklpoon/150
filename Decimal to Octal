@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Main {
+public static void main(String[] args) {
+
+Scanner in = new Scanner(System.in);
+
+System.out.println("Input Decimal Number: ");
+String oct = in.nextLine();
+
+int a = Integer.parseInt(oct);
+
+System.out.println("Octal Number Is: " + Integer.toOctalString(a));
+
+}
+}
