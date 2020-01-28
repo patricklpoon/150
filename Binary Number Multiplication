@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main{
+public static void main(String[] args) {
+
+  Scanner n = new Scanner(System.in);
+
+  String a, b;
+
+  System.out.println("");
+  a = n.nextLine();
+
+  System.out.println("");
+  b = n.nextLine();
+
+  int n1 = Integer.parseInt(a,2);
+  int n2 = Integer.parseInt(b,2);
+  int n3 = n1 * n2;
+
+  System.out.println("\n Product of two input binary numbers is: " + Integer.toBinaryString(n3));
+
+
+  }
+}
