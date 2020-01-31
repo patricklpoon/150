@@ -1,0 +1,18 @@
+import java.util.Scanner
+
+public class Main {
+
+public static void main (String[] args){
+
+  Scanner xxx = new Scanner(System.in);
+
+  System.out.println("");
+
+  String x = xxx.next();
+
+  int a = Integer.parseInt(x,2);
+
+  System.out.println(a);
+}
+
+}
