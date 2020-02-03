@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+
+ public static void main(String[] args) {
+
+  Scanner input = new Scanner(System.in);
+
+  System.out.println("Input Number: ");
+
+  String enteredInput = input.next();
+
+  int extractedStringtoInt = Integer.parseInt(enteredInput, 2);
+
+  String intToHexadecimal = Integer.toHexString(extractedStringtoInt);
+  System.out.println("Hexadecimal: " + intToHexadecimal.toUpperCase());
+
+
+ }
+}
