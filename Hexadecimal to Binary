@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main{
+
+  public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Hexadecimal Input: ");
+
+    String lastInput = input.next();
+
+    int changeIntFromExtractedInput = Integer.parseInt(lastInput, 16);
+
+    System.out.println("Binary Out Should Be: " + Integer.toBinaryString(changeIntFromExtractedInput));
+
+  }
+}
