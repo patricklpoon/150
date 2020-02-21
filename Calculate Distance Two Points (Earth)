@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+
+  public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Input X1: ");    double x1 = input.nextDouble();
+
+    System.out.println("Input Y1: ");    double y1 = input.nextDouble();
+
+    System.out.println("Input X2: ");    double x2 = input.nextDouble();
+
+    System.out.println("Input Y2: ");    double y2 = input.nextDouble();
+
+    System.out.println("The distance between those points is: " + distanceTP(x1,x2,y1,y2) + " km");
+
+  }
+
+  public static double distanceTP(double x1,double x2,double y1,double y2) {
+
+    double r = 6371.01;
+
+    x1 = Math.toRadians(x1);
+    y1 = Math.toRadians(y1);
+    x2 = Math.toRadians(x2);
+    y2 = Math.toRadians(y2);
+
+    return r * Math.acos(Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
+
+  }
+}
