@@ -1,0 +1,30 @@
+import java.util.Scanner;
+// Java program to read data of various types using Scanner class.
+
+public class Main {
+
+     public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        // Declare object 'input' and initialize
+        // predefined standard input object
+
+        System.out.print("Input a string:");
+        // Print any string to begin Scanner
+
+        char[] letters = input.nextLine().toCharArray();
+        // Declare character array 'letters' from string
+
+        System.out.print("Reverse string: ");
+        // Reference print for following For Loop outcome (Optional)
+
+        for (int i = letters.length - 1; i >= 0; i--) {
+            System.out.print(letters[i]);
+        }
+
+        // *program does not run if 
+        // length of letters is not subtracted by 1
+        // first loop statement "int i = letters.length -1"
+        // becomes necessary to initiate loop
+    }
+}
