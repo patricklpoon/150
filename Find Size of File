@@ -1,0 +1,18 @@
+import java.io.File;
+
+public class Main {
+
+  public static void main(String[] args) {
+
+  String pathFile = "E:\\vcredist.bmp";
+
+  File file = new File(pathFile);
+
+  if(file.exists()){
+    System.out.println(file.getAbsolutePath()+ " : " + file.length());
+    }
+  else{
+    System.out.println("Womp Womp");
+  }
+  }
+}

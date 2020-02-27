@@ -1,0 +1,6 @@
+public class Main{
+  public static void main(String[] args) {
+    int a ='Z';
+    System.out.println("The ASCII value of Z is : " + a);
+  }
+}
